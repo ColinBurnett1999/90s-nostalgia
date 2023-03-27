@@ -17,3 +17,19 @@ img {
     margin: 0 auto;
     display: block;
 }
+.wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5em 0;
+}
+header {
+    padding: 1.5em 0;
+}
+nav {
+    padding: .5em .75em;
+    border-radius: 8px;
+}
+nav > a {
+    padding: .5em .75em;
+    border-radius: 8px;
+}
