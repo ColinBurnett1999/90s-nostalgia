@@ -6,6 +6,9 @@ html {
     background-color: white;
     box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     margin: 0;
 }
@@ -25,9 +28,11 @@ img {
 header {
     padding: 1.5em 0;
 }
-nav {
+header nav ul {
     padding: .5em .75em;
     border-radius: 8px;
+    padding: auto;
+    list-style: none;
 }
 nav > a {
     padding: .5em .75em;
@@ -55,5 +60,43 @@ nav a:hover, :focus {
     background-position: top center;
 }
 .hero h1 {
-    
+    width: 75%;
+    padding: .5em;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .25);
+}
+.trends {
+    background-color: purple;
+}
+.trends figure {
+    width: 22%;
+    display: inline;
+  align-content: center;
+}
+.icon {
+    display: block;
+    padding: 2em 0;
+}
+.icon img {
+width: 260px;
+float: left;
+margin-right: 2em;    
+}
+.icon + p {
+    float: none;
+}
+section.featured-articles {
+visibility: hidden;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+footer > p {
+    text-align: center;
+    padding: 8px 0;
 }
